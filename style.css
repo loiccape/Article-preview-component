@@ -35,7 +35,7 @@ body {
 
 .mainContent > div:first-of-type > p:first-of-type {
   line-height: 24px;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: bold;
   color: #48556a;
 }
@@ -44,7 +44,7 @@ body {
   letter-spacing: 0.12px;
   font-weight: 500;
   line-height: 20px;
-  font-size: 13px;
+  font-size: 0.85rem;
   color: #6e8098;
   margin-top: 16px;
   margin-bottom: 30px;
@@ -68,19 +68,21 @@ body {
 
 .avatarContent > div > p:first-of-type {
   color: #48556a;
-  font-size: 13px;
+  font-size: 0.85rem;
   line-height: 20px;
   font-weight: bold;
 }
 
 .avatarContent > div > p:last-of-type {
   color: #9daec2;
-  font-size: 13px;
+  font-size: 0.85rem;
   line-height: 20px;
 }
 
 .avatarContent > img:last-of-type {
-  background-color: #6e8098;
+  background-color: #ECF2F8;
+  height: 32px;
+  width: 32px;
   border-radius: 100%;
   padding: 10px;
   margin-left: 50px;
@@ -100,7 +102,7 @@ body {
 
 .shareContent > p:first-of-type {
   color: #9daec2;
-  font-size: 13px;
+  font-size: 0.85rem;
   letter-spacing: 5px;
 }
 
@@ -122,6 +124,18 @@ body {
     width: 720px;
     height: 280px;
   }
+  .mainContent > div:first-of-type > p:first-of-type{
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .mainContent > div:first-of-type > p:last-of-type{
+    font-size: 13px;
+  }
+
+  .mainContent > div:first-of-type >p:last-of-type > br{
+    display: none;
+  }
 
   .mainContent > img:first-of-type {
     width: 285px;
@@ -134,6 +148,8 @@ body {
   .avatarContent{
     display: flex;
     justify-content: flex-start;
+    position: relative;
+    bottom: 15px;
   }
 
   .avatarContent > img:last-child{
